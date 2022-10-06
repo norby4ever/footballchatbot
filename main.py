@@ -25,7 +25,7 @@ async def echo(message: types.Message):
         answer = 'Не удалось найти команду, попробуйте указать город'
     for result in results:
         try:
-            if 'football' in summary(result, auto_suggest=False)[:300]:
+            if 'football club' in summary(result, auto_suggest=False)[:300].lower():
                 answer = 'en.wikipedia.org/wiki/' + result.replace(' ', '_')
                 break
         except DisambiguationError:
