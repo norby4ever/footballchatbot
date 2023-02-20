@@ -6,7 +6,7 @@
 from aiogram import Bot, Dispatcher, executor, types
 from wikipedia import search, summary, DisambiguationError
 
-API_TOKEN = '5696283636:AAGgyEf5XEXPX2oe2gPEfe5neGKobOhNdMM'
+API_TOKEN = '123123'
 
 bot = Bot(token=API_TOKEN)
 dp = Dispatcher(bot)
